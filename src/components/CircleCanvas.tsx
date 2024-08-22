@@ -35,12 +35,12 @@ const CircleCanvas: React.FC<CircleCanvasProps> = ({ percent, radius, strokeWidt
     const centerX = canvas.width / 2
     const centerY = canvas.height / 2
     const radiusAdjusted = radius - strokeWidth / 2
-
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
-
+    
     canvas.width = radius * 2
     canvas.height = radius * 2
 
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    
     // 圓圈背景
     ctx.beginPath()
     ctx.arc(centerX, centerY, radiusAdjusted, 0, 2 * Math.PI)
@@ -71,6 +71,8 @@ const CircleCanvas: React.FC<CircleCanvasProps> = ({ percent, radius, strokeWidt
   return (
     <canvas
       ref={canvasRef}
+      width={radius * 2}
+      height={radius * 2}
       style={{position: 'absolute'}}
     />
   )
