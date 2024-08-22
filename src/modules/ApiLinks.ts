@@ -1,6 +1,6 @@
 
 // apikey
-export const apiKey = "8f49ff1df005d001151e6be05ea48614"
+export const apiKey = "Your TMDB API KEY"
 
 // img base URL
 export const baseImgURL = 'https://image.tmdb.org/t/p/w500'
