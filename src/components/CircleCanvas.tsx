@@ -59,9 +59,9 @@ const CircleCanvas: React.FC<CircleCanvasProps> = ({ percent, radius, strokeWidt
      * butt 預設值，平面線頭
      
       * (以下皆會多一點長度)
-      * round 圓角，但是線頭的圓其實是以"線寬(lineWidth)"的一半!做為半徑 的半圓在線頭
+      * round 圓角，線頭是以"線寬(lineWidth)"的一半做為半徑的半圓
 
-      * square 平面線頭，但是線頭其實是以"線寬(lineWidth)"的一半! 做為高度，寬度同"線寬"的方形在線頭
+      * square 平面線頭，線頭是以"線寬(lineWidth)"的一半做為高度，寬度同"線寬"的方形
     */
     ctx.lineCap = 'round'
     ctx.stroke()
