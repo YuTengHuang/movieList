@@ -18,7 +18,7 @@ const Header = () =>{
         let timeout: number
         return (...args: unknown[]) => {
             clearTimeout(timeout)
-            timeout = window.setTimeout(() => func.apply(args), wait)
+            timeout = window.setTimeout(() => func(...args), wait)
         };
     }
     
